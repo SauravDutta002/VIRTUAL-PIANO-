@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- Code crafted by Saurav Dutta -->
+  <head>
+    <meta charset="utf-8" />
+    <title>VIRTUAL PIANO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2 class="bg-color">VIRTUAL PIANO</h2>
+
+        <div class="column volume-slider">
+          <span class="bg-color"><i class="fa-solid fa-volume-high"></i></span
+          ><input type="range" min="0" max="1" value="0.5" step="any" />
+        </div>
+        <div class="column keys-checkbox">
+          <span class="bg-color"><i class="fa-solid fa-book"></i></span
+          ><input type="checkbox" checked />
+        </div>
+
+        <div class="column keys-checkbox">
+          <button class="toggle-sequence">Enable Song</button>
+        </div>
+        <div class="column song-selector">
+          <span><i class="fa-solid fa-music"></i></span>
+          <select id="songSelector">
+            <option value="Happy Birthday">Happy Birthday</option>
+            <option value="Twinkle Twinkle">Twinkle Twinkle</option>
+            <option value="Saregamapa">Saregamapa</option>
+            <!-- Add more songs here as needed -->
+          </select>
+        </div>
+      </header>
+      <ul class="piano-keys">
+        <li class="key white" data-key="a"><span>a</span></li>
+        <li class="key black" data-key="w"><span>w</span></li>
+        <li class="key white" data-key="s"><span>s</span></li>
+        <li class="key black" data-key="e"><span>e</span></li>
+        <li class="key white" data-key="d"><span>d</span></li>
+        <li class="key white" data-key="f"><span>f</span></li>
+        <li class="key black" data-key="t"><span>t</span></li>
+        <li class="key white" data-key="g"><span>g</span></li>
+        <li class="key black" data-key="y"><span>y</span></li>
+        <li class="key white" data-key="h"><span>h</span></li>
+        <li class="key black" data-key="u"><span>u</span></li>
+        <li class="key white" data-key="j"><span>j</span></li>
+        <li class="key white" data-key="k"><span>k</span></li>
+        <li class="key black" data-key="o"><span>o</span></li>
+        <li class="key white" data-key="l"><span>l</span></li>
+        <li class="key black" data-key="p"><span>p</span></li>
+        <li class="key white" data-key=";"><span>;</span></li>
+      </ul>
+    </div>
+  </body>
+</html>
